@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+                <style>
+                    .container{
+                        border:solid #dddddd 1px;
+                    }    
+                    h6{
+                        color:#000000;
+                    }
+                    span{
+                        color:#53ACBC;
+                    }p{
+                        background-color: #F3F1F2;
+                        color:#53ACBC;
+                    }
+                    i{
+                        font-size: 2px;
+                    }
+                    input[type="submit"], input[type="reset"]{
+                        text-align:center!important;
+                        background-color:#D4D5B1;
+                        color:#000000;
+                        border-radius: 1rem;
+                    }
+                    #footer a{
+                        color:#ffffff;
+                    }
+                    #footer a:hover{
+                        text-decoration: none;
+                    }
+                </style>
+
+	<title>State Bank of India</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>	
+
+        <header id="header">
+
+            <div class="container">
+
+                <div class="row">
+
+                        <div class="col-xl-4 p-0">
+                                <a href="index.html"><image  src="images/logo.png"></image></a>
+                        </div>
+    
+                        <div class="col-xl-8 text-right p-0">
+                                <a href="index.html"><image  src="images/rightLogo.png"></image></a>
+                        </div>
+                </div>
+
+            </div>
+
+        </header>
+
+<section id="receipt">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xl-12 pt-4">
+                <h6><span>Your site visit:</span> 14-Sep-2019 [01:19 IST]</h6>    <!-- have to do with funtion date and time -->
+                <br><p><b>Enter Account Number and specify the date range for which you wish to view transaction details</b></p>
+                Merchant Name <i>*</i> :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <select name="popMerchantCode" id="popMerchantCode" onchange="getCardMerchant(this.value)">
+                        <option value="select">Select Merchant Name</option>
+                        
+                        <option value="UTTR_GOVT">
+                            Commercial Tax Department Uttarakhand
+                        </option>
+                        
+                        
+                        <option value="UPSC">
+                            Union Public Service Commission (UPSC)
+                        </option>
+                        
+                        
+                        <option value="SSC">
+                            Staff Selection Commission (SSC)
+                        </option>
+                        
+                        
+                        <option value="UPSC_ORA">
+                            Union Public Service Commission (UPSC) - ONLINE Recruitment Application
+                        </option>
+                        
+                        
+                        <option value="KERALA_MVD">
+                            Motor Vehicles Department Kerala
+                        </option>
+                        
+                        
+                        <option value="SSC_SIFY">
+                            Staff Selection Commission (SSC)
+                        </option>
+                        
+                        
+                        <option value="UP_UB">
+                            PROCESSING/LICENSE/NOC FEES UNDER NIVESH MITRA-Govt of UP
+                        </option>
+                        
+                        
+                        <option value="CGRH_RTO">
+                            Chhattisgarh - Road Transport Organization (RTO)
+                        </option>
+                        
+                        
+                        <option value="NDMC">
+                            New Delhi Municipal council
+                        </option>
+                        
+                        
+                        <option value="CPWD_EPROC">
+                            Collection of Tender fee and Earnest Money
+                        </option>
+                        
+                        
+                        <option value="DELHI_MUNC">
+                            New Delhi Municipal Council
+                        </option>
+                        
+                        
+                        <option value="UKPSC">
+                            UKPSC
+                        </option>
+                        
+                        
+                        <option value="ICEGATE_NEW">
+                            ICEGATE
+                        </option>
+                        
+                        
+                        <option value="MCA21">
+                            MCA21
+                        </option>
+                        
+                        
+                        <option value="UP_GOVT">
+                            UP CYBER TREASURY
+                        </option>
+                        
+                        
+                        <option value="TestMer">
+                            test merchant
+                        </option>
+                        
+                        
+                        <option value="MAHGOVT">
+                            MAHARASHTRA GOVT
+                        </option>
+                        
+                        
+                        <option value="MPGOVT_NEW">
+                            MP Treasury
+                        </option>
+                        
+                        
+                        <option value="Orissa_RTO">
+                            State Transport Authority,Govt of Orissa
+                        </option>
+                        
+                        
+                        <option value="MEGA_VAT">
+                            Finance Department,Government of Meghalaya
+                        </option>
+                        
+                        
+                        <option value="HYGOVT">
+                            Haryana Govt.
+                        </option>
+                        
+                        
+                        <option value="national_permit">
+                            National Permit
+                        </option>
+                        
+                        
+                        <option value="IPO">
+                            Indian Patent Office
+                        </option>
+                        
+                        
+                        <option value="RAJCST">
+                            Rajasthan Government - Commercial Taxes
+                        </option>
+                        
+                        
+                        <option value="TPTUP_TEST">
+                            Uttar Pradesh - Transport Department
+                        </option>
+                        
+                        
+                        <option value="TNGOVT">
+                            TNVAT
+                        </option>
+                        
+                        
+                        <option value="MPGOVT">
+                            MP Govt.
+                        </option>
+                        
+                        
+                        <option value="BIHARCST">
+                            Bihar Commercial Taxes
+                        </option>
+                        
+                        
+                        <option value="GJCST">
+                            Commercial Tax Department-Government of Gujarat
+                        </option>
+                        
+                        
+                        <option value="TMR">
+                            Trade Mark Registeration
+                        </option>
+                        
+                        
+                        <option value="RAJGOVT">
+                            Rajasthan Government
+                        </option>
+                        
+                        
+                        <option value="UPCT_COM">
+                            Uttar Pradesh Commercial Tax Department
+                        </option>
+                        
+                        
+                        <option value="GJGOVT">
+                            Gujarat Treasury
+                        </option>
+                        
+                        
+                        <option value="CGRHGOVT_ALL">
+                            Chattisgarh Govt All
+                        </option>
+                        
+                        
+                        <option value="WBFINGRIPS">
+                            WBFINGRIPS
+                        </option>
+                        
+                        
+                        <option value="MCA">
+                            MCA
+                        </option>
+                        
+                        
+                        <option value="MPRTO">
+                            Madhya Pradesh Road Transport Organization
+                        </option>
+                        
+                        
+                        <option value="KVATIS">
+                            Kerala Govt Cyber Treasury
+                        </option>
+                        
+                        
+                        <option value="ASSAM_VAT">
+                            ASSAM VAT
+                        </option>
+                        
+                        
+                        <option value="GJGOVT_CST">
+                            Gujarat - Department of Central Sales Tax
+                        </option>
+                        
+                        
+                        <option value="GJGOVT_ENT">
+                            Gujarat Treasury
+                        </option>
+                        
+                        
+                        <option value="GJGOVT_ENTXM">
+                            Gujarat Treasury
+                        </option>
+                        
+                        
+                        <option value="GJGOVT_ET">
+                            Gujarat Treasury
+                        </option>
+                        
+                        
+                        <option value="GJGOVT_GMT">
+                            Gujarat Treasury
+                        </option>
+                        
+                        
+                        <option value="GJGOVT_LEIB">
+                            Cyber Treasury
+                        </option>
+                        
+                        
+                        <option value="GJGOVT_MVT">
+                            Gujarat MVD
+                        </option>
+                        
+                        
+                        <option value="GJGOVT_PT">
+                            Gujarat Treasury
+                        </option>
+                        
+                        
+                        <option value="GJGOVT_VAT">
+                            Gujara t- VAT
+                        </option>
+                        
+                        
+                        <option value="GJ_GOVT">
+                            Gujara t- VAT
+                        </option>
+                        
+                        
+                        <option value="OLTAS">
+                            OLTAS
+                        </option>
+                        
+                        
+                        <option value="TPT_BR">
+                            Transport Payment,Govt of Bihar
+                        </option>
+                        
+                        
+                        <option value="CRIS_IR2">
+                            CRIS IR2
+                        </option>
+                        
+                        
+                        <option value="RTI_TEST">
+                            RTI Online Payment
+                        </option>
+                        
+                        
+                        <option value="RTI_GOI">
+                            RTI Online Payment
+                        </option>
+                        
+                        
+                        <option value="TPT_DL">
+                            Delhi - Transport Department
+                        </option>
+                        
+                        
+                        <option value="IPO_NEW">
+                            Indian Patent Office
+                        </option>
+                        
+                        
+                        <option value="MHA_TEST">
+                            MHA TEST
+                        </option>
+                        
+                        
+                        <option value="BIHAR_COM">
+                            Commercial Tax Dept Of BIHAR
+                        </option>
+                        
+                        
+                        <option value="MLGOVT_TEST">
+                            MEGHALAYA GOVT
+                        </option>
+                        
+                        
+                        <option value="KLGOVT_TEST">
+                            KERALA GOVT
+                        </option>
+                        
+                        
+                        <option value="MHA_IB">
+                            MHA_IB
+                        </option>
+                        
+                        
+                        <option value="MEGA_RTO">
+                            Meghalaya - Road Transport Organization (RTO)
+                        </option>
+                        
+                        
+                        <option value="MCA1">
+                            MCA1
+                        </option>
+                        
+                        
+                        <option value="RRB">
+                            Railway Recruitment Board
+                        </option>
+                        
+                        
+                        <option value="TPT_UP">
+                            Uttar Pradesh - Transport Department
+                        </option>
+                        
+                        
+                        <option value="RPSC">
+                            RAJASTHAN PUBLIC SERVICE COMMISSION
+                        </option>
+                        
+                        
+                        <option value="SISB">
+                            SISB
+                        </option>
+                        
+                        
+                        <option value="CPWD">
+                            Collection of Tender fee and Earnest Money
+                        </option>
+                        
+                        
+                        <option value="ORISSA_DTIM">
+                            Orissa DTI Taxes
+                        </option>
+                        
+                        
+                        <option value="ICEGATE">
+                            ICEGATE
+                        </option>
+                        
+                        
+                        <option value="DMG">
+                            Department of Mines and Geology,Govt of Karnataka
+                        </option>
+                        
+                        
+                        <option value="BIHARRTO">
+                            BIHAR RTO
+                        </option>
+                        
+                        
+                        <option value="GOAGOVT">
+                            Goa Govt
+                        </option>
+                        
+                        
+                        <option value="TPT_WB">
+                            West Bengal - Transport Department
+                        </option>
+                        
+                        
+                        <option value="TPT_UK">
+                            Transport Department Government of  Uttrakhand
+                        </option>
+                        
+                        
+                        <option value="dppqs">
+                            Directorate of Plant Protection, Quarantine &amp; Storage
+                        </option>
+                        
+                        
+                    </select>
+                    <br>
+                    Reg no. <i>*</i> : &nbsp;&nbsp;&nbsp;&nbsp;<input type="text"><br>
+                    Enter Account No.(11 digits)<i>*</i> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"><br><br>
+                    Start Date : &nbsp;&nbsp;&nbsp;&nbsp;<input type="text"><br><br>
+                    End Date : &nbsp;&nbsp;&nbsp;&nbsp;<input type="text">
+                    <br><br>
+                    <input type="submit" value="submit">
+                    <input type="reset" value="cancel">
+                    <br>
+                    <br>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="footer">
+                <div class="container p-0">
+            
+                        <div class="row">
+        
+                            <div class="col-xl-12">
+                                <p>&nbsp;&nbsp;&copy;State Bank of India (APM Id:Serv_Tran_564) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="privacy.html">Privacy Statement</a>&nbsp;|&nbsp;<a href="disclosure.html">Disclosure</a>&nbsp;|&nbsp;<a href="t&c.html">Terms & Conditions</a></p>
+                            </div>
+                        </div>
+            </section>

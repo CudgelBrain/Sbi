@@ -1,0 +1,367 @@
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+ul,ol{
+	margin: 0px;
+	padding:0px;
+	list-style: none;
+}
+
+a,button,select,input{
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.button a{
+    background-color: #0C376A;
+    color:white;
+    padding:8px 25px;                                                                                                                                                                                                                          
+}
+
+.button a:hover{
+    text-decoration: none;
+    color:#0C376A;
+    border:solid #0C376A 2px;
+    background-color: #ffffff;
+}
+
+.padding{
+    padding-top:200px;
+}
+
+#links{
+    position: relative;
+    z-index: 3;
+}
+
+#links li{
+    border-right:1px solid #919FF2;
+    border-left:1px solid #919FF2;
+    background-color: #0C376A;
+    padding-right:32px;
+    padding-left:32px;
+}
+
+#links a{
+    color:#ffffff;
+}
+
+#navbarSupportedContent ul li{
+    position: relative;
+}
+
+#navbarSupportedContent ul li ul{
+    position: absolute;
+    left: 0;
+    width:200px;
+    color:#0C376A;
+    display: none;
+}
+
+#navbarSupportedContent ul li:hover ul{
+    display: block;
+}
+
+#note{
+    position: relative;
+    z-index: 2;;
+}
+#note .col-xl-12{
+    border:1px solid #EBEBEB;
+}
+
+#login .col-xl-12{
+    border:1px solid #EBEBEB;
+}
+
+#login i{
+    font-size:50px;
+    color:#2C81BA;
+}
+
+#login span{
+    color:#2C81BA;
+}
+
+.links li{
+    display: inline;
+    padding:0 35px 0 35px;
+}
+ 
+.links li a:hover{
+    text-decoration: none;
+}
+
+.navbar{
+    padding:0rem!important;
+}
+
+#login .links i{
+    font-size:20px;
+}
+
+#login .links li a{
+    color:black;
+}
+
+#login .links .one i{
+    color:#efcecd;
+}
+
+#login .links .two i{
+    color:#57AFFD;
+}
+
+#login .links .three i{
+    color:#E6B48A;
+}
+
+#login .links .four i{
+    color:#3EA660;
+}
+
+#marquee .col-xl-12{
+    background-color: #FFBD83;
+}
+
+#marquee p{
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: marquee;
+}
+
+.carousel-control-prev {
+    left: -46px!important;
+}
+
+.carousel-control-next {
+    right: -47px!important;
+}
+
+#footer p{
+    font-size: 12px;
+    background-color:#0C376A;
+    padding:10px;
+    color:white; 
+}
+
+#Footer span{
+    text-align:left;
+}
+
+#loginlinks{
+    background-color: #1B75BC;
+    padding-right:64px;
+}
+
+#loginlinks a{
+    color:#ffffff;
+}
+
+
+
+
+
+/*HEADER*/
+
+#headerLinks #navbarSupportedContent{
+    background-color: #2272C7;    
+}
+
+#headerLinks #navbarSupportedContent ul li a{
+    color:white;
+    padding-right:20px;
+    padding-left:20px;
+}
+
+#headerLinks #navbarSupportedContent ul li a:hover, #headerLinks .active a{
+    background-color: #205CBE;
+}
+
+
+
+
+
+
+/*mCAsh*/
+
+#hr{
+    padding:4px;
+    background-color: #205CBE;
+}
+
+#form .container, #mCashFooter .container{
+    -webkit-box-shadow: 1px 7px 7px 3px #A3A3A3;
+    box-shadow: 1px 7px 7px 3px #A3A3A3;
+}
+
+#headerLinks .container{
+    -webkit-box-shadow: 3px 0 7px 0 #A3A3A3;;
+    box-shadow: 3px 0 7px 0 #A3A3A3;
+
+}
+
+#header .container{
+    -webkit-box-shadow: 3px 0 7px 0 #A3A3A3;;
+    box-shadow: 3px 0 7px 0 #A3A3A3;
+}
+
+#header .row{
+    -webkit-box-shadow: -3px 0 7px 0 #A3A3A3;;
+    box-shadow: -3px 0 7px 0 #A3A3A3;
+}
+
+#form h2{
+    font-size: 20px;
+    padding:8px;
+}
+
+#form span{
+    color:#F8BB7B;
+}
+
+.pink{
+    background-color: #FCF5E9;
+}
+
+i{
+    color:#F5642E;
+    font-size:40px;
+}
+
+#mCashfooter p{
+    background-color: #414141;
+    color:white;
+    padding:6px;
+}
+
+#mCashfooter a{
+    color:white;
+}
+
+#mCashfooter a:hover{
+    text-decoration:none;
+}
+
+#hrtwo{
+    padding:2px;
+    background-color: #205CBE;
+}
+
+
+
+
+
+/*dtmobile*/
+
+#dthHeader h5{
+    background-color: #D9E2EB;
+    padding:10px;
+    margin-top:0px; 
+    width:150px;
+}
+
+#dthHeader h6{
+    background-color: #F0F0F0;
+    padding:12px;
+    width:991px;
+    margin-left:-56px;
+}
+
+#dthHeader .col-xl-11{
+    margin-right:0px;
+}
+
+#dthHeader .col-xl-3{
+    padding-left:0px;
+}
+
+#sidelinks .col-xl-2 img{
+    padding-left:133px;
+}
+
+
+
+
+/* personalBanking */
+#products h4{
+    background-color: #205CBE;
+    color:white;
+    padding:7px;
+    text-align: center;
+}
+
+#products img{
+    padding-right: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.new{
+    position: relative;
+}
+
+.new button{
+    position: relative;
+}
+
+.new #one{
+    position: absolute;
+    z-index: 1;
+    left:-55px;
+}
+
+.new #two{
+    z-index: 1;
+    position: absolute;
+    left:-55px;
+    top:27px;
+}
+
+.new #three{
+    position: absolute;
+    left:-55px;
+    z-index: 1;
+    top:54px;
+}
+
+button .box .active {
+    z-index: 10;
+    position: absolute;
+    bottom:100px;
+}
+
+#right img{
+    margin-left:69px;
+    font-size:10px;
+}
+
+#left img{
+    margin-left:-36px;
+    font-size:10px;
+}
+
+/* 
+how do i */
+
+#quicklinks{
+    background-color: #EFF3F1;
+    padding:20px; 
+}
+
+
+/* login */
+
+#loginPage{
+    background-image: url(../images/clouds.jpg);
+    background-position: no-repeat;
+}
